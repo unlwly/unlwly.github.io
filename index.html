@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>unlwly:site</title>
+
+        <meta name="author" content="unlwly" />
+        <meta name="copyright" content="&copy; unlwly" />
+        <meta name="description" content="Product of lunacy.">
+        <meta name="URL" content="https://unlwly.github.io" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
+
+        <link rel="shortcut icon" href="assets/icon.png" />
+        <link rel="icon" href="assets/icon.png" />
+        <link rel="apple-touch-icon" href="assets/icon.png" />
+        <link rel="mask-icon" href="assets/icon.png" />
+
+        <meta property="og:site_name" content="unlwly.github.io" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="unlwly:site" />
+        <meta property="og:description" content="Product of lunacy." />
+        <meta property="og:url" content="https://unlwly.github.io" />
+        <meta property="og:image" content="https://github.com/unlwly.png?size=360" />
+
+        <meta content="#0d0103" data-react-helmet="true" name="theme-color" />
+
+        <link rel="stylesheet" href="assets/css/global.css" />
+    </head>
+
+    <body class="bg-no1">
+        <header>
+            <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
+            <nav class="nav">
+                <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
+                        <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
+                        <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="center-h">
+            <div class="center-v text-shadow">
+                <div class="l-cnt">
+                    <div class="al">
+                        <div class="avi"></div>
+                        <div class="logo"></div>
+                    </div>
+                    <div class="no-pointer quote-text"><script src="assets/js/quote.js"></script></div>
+                    <div class="socials">
+                        <li><a href="mailto:unlwly@proton.me" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="bi bi-envelope-fill"></span></a></li>
+                        <li><a href="https://github.com/unlwly" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="bi bi-github"></span></a></li>
+                        <li><a href="https://www.youtube.com/@unlwly" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="bi bi-youtube"></span></a></li>
+                        <li><a href="https://open.spotify.com/user/31tz7ppsnrxtosagacw5kzzj4gxu" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="bi bi-spotify"></span></a></li>
+                        <li><a href="https://ieji.de/@unlwly" target="_blank" rel="me" class="icon-social"><span class="bi bi-mastodon"></span></a></li>
+                        <li><a href="https://matrix.to/#/@unl1ly:matrix.org" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="si si-matrix"></span></a></li>
+                        <li><a href="https://myanimelist.net/profile/unlwly" target="_blank" rel="noopener noreferrer" class="icon-social"><span class="si si-myanimelist"></span></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crn">
+            <footer>&copy; <span id="year"></span> unlwly. All Rights Reserved.</footer>
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </body>
+
+</html>

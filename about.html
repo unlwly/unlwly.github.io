@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>unlwly:about</title>
+
+        <meta name="author" content="unlwly" />
+        <meta name="copyright" content="&copy; unlwly" />
+        <meta name="description" content="Product of lunacy.">
+        <meta name="URL" content="https://unlwly.github.io" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
+
+        <link rel="shortcut icon" href="assets/icon.png" />
+        <link rel="icon" href="assets/icon.png" />
+        <link rel="apple-touch-icon" href="assets/icon.png" />
+        <link rel="mask-icon" href="assets/icon.png" />
+
+        <meta property="og:site_name" content="unlwly.github.io" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="unlwly:site" />
+        <meta property="og:description" content="Product of lunacy." />
+        <meta property="og:url" content="https://unlwly.github.io" />
+        <meta property="og:image" content="https://github.com/unlwly.png?size=360" />
+
+        <meta content="#0d0103" data-react-helmet="true" name="theme-color" />
+
+        <link rel="stylesheet" href="assets/css/global.css" />
+    </head>
+
+    <body class="bg-no1">
+        <header>
+            <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
+            <nav class="nav">
+                <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
+                        <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
+                        <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <div class="sec sec-bnr">
+                <script src="assets/js/typed.js"></script>
+                <h1 class="bnrmain">I'm <span class="lunatic"></span></h1>
+                <h1 class="kao">┐(＞﹏＜)┌</h1>
+                <script>
+                    var typed = new Typed(".lunatic", {
+                        strings: ["a designer", "a developer", "an artist"],
+                        typeSpeed: 70,
+                        backSpeed: 30,
+                        loop: true
+                    })
+                </script>
+            </div>
+            <div class="sec sec-bio">
+                <p>
+                    Hey, I'm an IT full-time student from Czech Republic.
+                    I'm particularly interested in graphic design, free and open source,
+                    tinkering with hardware, linux etc.
+                </p>
+                <p>
+                    Also I'm into music, audio tech, content creation, drawing, photographing and anime.
+                </p>
+            </div>
+            <div class="sec sec-skills">
+                <ul>
+                    <li><span class="si si-html5 si--color" aria-label="HTML"></span></li>
+                    <li><span class="si si-css3 si--color" aria-label="CSS"></span></li>
+                    <li><span class="si si-sass si--color" aria-label="Sass"></span></li>
+                    <li><span class="si si-javascript si--color" aria-label="JS"></span></li>
+                    <li><span class="si si-gnubash si--color" aria-label="Bash"></span></li>
+                    <li><span class="si si-python si--color" aria-label="Python"></span></li>
+                    <li><span class="si si-lua si--color" aria-label="Lua"></span></li>
+                    <li><span class="si si-git si--color" aria-label="Git"></span></li>
+                    <li><span class="si si-linux si--color" aria-label="Linux"></span></li>
+                </ul>
+            </div>
+            <div class="sec sec-time">
+                <hr>
+                <p class="clock-aside"><span class="gradient-text">My current time is</span></p>
+                <p class="clock-time"><span class="mono" id="time"></span></p>
+                <script src="assets/js/mytime.js"></script>
+            </div>
+        </div>
+
+        <div class="crn">
+            <footer>&copy; <span id="year"></span> unlwly. All Rights Reserved.</footer>
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </body>
+
+</html>
