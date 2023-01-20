@@ -44,8 +44,8 @@ hr {color: var(--tx-muted);}
     max-width: 800px;
     margin: auto;
     padding: 3em 1.5em 3em 1.5em;
-    border-left: solid 1px var(--tx-st);
-    border-right: solid 1px var(--tx-st);
+    border-left: solid 2px var(--tx-st);
+    border-right: solid 2px var(--tx-st);
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -218,7 +218,7 @@ logo + stuffs
     height: 8.5em;
     margin: auto;
     margin-bottom: 0.75em;
-    border-bottom: solid 1px var(--tx-st);
+    border-bottom: solid 2px var(--tx-st);
     opacity: 0.95;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -269,7 +269,7 @@ backgrounds
 ーーーーーーーーーーーーーーーーーー */
 
 .bg-no1 {
-    background: linear-gradient( rgba(0,0,0,.35), rgba(0,0,0,.35) ),url("../rain.webp"),var(--bg) center/cover no-repeat fixed;
+    background: linear-gradient( rgba(0,0,0,.35), rgba(0,0,0,.35) ),url("../rain-in-nikko-sean-lewis.webp"),var(--bg) center/cover no-repeat fixed;
     background-size: cover !important;
 }
 
@@ -291,6 +291,7 @@ sections
     display: block ruby;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
+.sec-bnr>h1 {width: 100%;}
 .kao {float: right;}
 .sec-bio {
     margin: 0 1.5em 0 0.5em;
@@ -488,7 +489,7 @@ responsive css
 }
 
 @media (max-width: 620px) {.sec-bnr>h1 {font-size: 20pt;}}
-@media (max-width: 480px) {.bnrmain {display: none;} .kao {float: none;margin: auto;} .sec-bnr {text-align: center;}}
+@media (max-width: 520px) {.kao {float: none;display:block;}.sec-bnr>h1 {text-align: center;}}
 
 @media (max-width: 350px) {
     .al {
