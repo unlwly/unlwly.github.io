@@ -269,7 +269,7 @@ backgrounds
 ーーーーーーーーーーーーーーーーーー */
 
 .bg-no1 {
-    background: linear-gradient( rgba(0,0,0,.35), rgba(0,0,0,.35) ),url("../rain-in-nikko-sean-lewis.webp"),var(--bg) center/cover no-repeat fixed;
+    background: linear-gradient( rgba(0,0,0,.35), rgba(0,0,0,.35) ),url("../Scene-by-Nikolai-Lockertsen.webp"),var(--bg) center/cover no-repeat fixed;
     background-size: cover !important;
 }
 
