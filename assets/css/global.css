@@ -489,7 +489,13 @@ responsive css
 }
 
 @media (max-width: 620px) {.sec-bnr>h1 {font-size: 20pt;}}
-@media (max-width: 520px) {.kao {float: none;display:block;}.sec-bnr>h1 {text-align: center;}}
+@media (max-width: 520px) {
+    .kao {float: none;display:block;}
+    .sec-bnr>h1 {text-align: center;}
+    .sec-skills>ul, .sec-skills>ul>li {
+        font-size: 16pt;
+    }
+}
 
 @media (max-width: 350px) {
     .al {
@@ -515,7 +521,7 @@ responsive css
     .socials {
         gap: 0.5em;
     }
-    .sec-time {
+    .sec-time, .sec-skills {
         display: none;
     }
     .sec-bnr {
