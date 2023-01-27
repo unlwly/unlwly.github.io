@@ -203,7 +203,7 @@ logo + stuffs
     -webkit-transition: all .3s ease-in-out;
 }
 .avi {
-    background: url("../avi.webp") center/contain no-repeat;
+    background: url("https://github.com/unlwly.png?size=240") center/contain no-repeat;
     height: 7.5em;
     width: 7.5em;
     display: block;
