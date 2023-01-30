@@ -213,7 +213,6 @@ logo + stuffs
     -webkit-transition: all .3s ease-in-out;
 }
 .al {
-    filter: grayscale(100%) contrast(1.7);
     width: 24.5em;
     height: 8.5em;
     margin: auto;
