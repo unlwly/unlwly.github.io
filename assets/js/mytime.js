@@ -9,7 +9,7 @@ function startTime() {
     var timeString = formatter.format(now);
     var h = timeString.split(":")[0];
     var m = timeString.split(":")[1];
-    document.getElementById("time").innerHTML = h + ":" + m;
+    document.getElementsByClassName("time")[0].innerHTML = h + ":" + m;
     setTimeout(startTime, 1000);
 }
 startTime();

@@ -29,73 +29,53 @@
         <link rel="stylesheet" href="assets/css/global.css" />
     </head>
 
-    <body class="bg-no1">
-        <header>
-            <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
-            <nav class="nav">
-                <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
-                <div class="nav-wrapper">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
-                        <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
-                        <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <div class="wrapper">
-            <div class="sec sec-bnr">
-                <script src="assets/js/typed.js"></script>
-                <h1>I'm <span class="lunatic"></span><span class="kao">ヽ(ー‸ー )ノ</span></h1>
-                <script>
-                    var typed = new Typed(".lunatic", {
-                        strings: ["a designer", "a developer"],
-                        typeSpeed: 70,
-                        backSpeed: 30,
-                        loop: true
-                    })
-                </script>
-            </div>
-            <div class="sec sec-bio">
-                <p>
-                    I'm a full-time student (IT) from Czech Republic.
-                    I'm particularly interested in graphic design, free and open source,
-                    tinkering with hardware, linux etc.
-                </p>
-                <p>
-                    Also I'm into music, audio tech, content creation, art, photographing and anime.
-                </p>
-            </div>
-            <div class="sec sec-skills">
+    <body>
+        <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
+        <nav class="nav">
+            <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
+            <div class="nav-wrapper">
                 <ul>
-                    <li><span class="si si-html5 si--color" aria-label="HTML"></span></li>
-                    <li><span class="si si-css3 si--color" aria-label="CSS"></span></li>
-                    <li><span class="si si-sass si--color" aria-label="Sass"></span></li>
-                    <li><span class="si si-javascript si--color" aria-label="JS"></span></li>
-                    <li><span class="si si-gnubash si--color" aria-label="Bash"></span></li>
-                    <li><span class="si si-python si--color" aria-label="Python"></span></li>
-                    <li><span class="si si-lua si--color" aria-label="Lua"></span></li>
-                    <li><span class="si si-git si--color" aria-label="Git"></span></li>
-                    <li><span class="si si-linux si--color" aria-label="Linux"></span></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
+                    <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
+                    <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
                 </ul>
             </div>
-            <div class="sec sec-time">
-                <hr>
-                <p class="clock-aside"><span class="gradient-text">My current time is</span></p>
-                <p class="clock-time"><span class="mono" id="time"></span></p>
-                <script src="assets/js/mytime.js"></script>
-            </div>
+        </nav>
+
+        <div class="wrapper">
+            <script src="assets/js/typed.js"></script>
+            <h1 class="hdr">ヽ(ー‸ー )ノ I'm <span class="lunatic"></span></h1>
+            <script>
+                var typed = new Typed(".lunatic", {
+                    strings: ["a designer", "a developer"],
+                    typeSpeed: 70,
+                    backSpeed: 30,
+                    loop: true
+                })
+            </script>
+            <p class="sec">
+                I'm a full-time student (IT) from Czech Republic.
+                I'm particularly interested in graphic design, free and open source,
+                tinkering with hardware, linux etc.
+            </p>
+            <p class="sec">
+                Also I'm into music, audio tech, content creation, art, photographing and anime.
+            </p>
+            <p class="sec">
+                Additionally I'm familiar with CSS, JS, HTML, sh, Python, Lua, C++
+            </p>
+            <p class="nt">My current time is <span class="time"></span></p>
+            <script src="assets/js/mytime.js"></script>
         </div>
 
         <div class="crn">
-            <footer>&copy; <span id="year"></span> unlwly. All Rights Reserved.</footer>
+            <footer>&copy; <span class="year"></span> unlwly. All Rights Reserved.</footer>
             <script>
-                document.getElementById("year").innerHTML = new Date().getFullYear();
+                document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
             </script>
         </div>
     </body>

@@ -29,31 +29,29 @@
         <link rel="stylesheet" href="assets/css/global.css" />
     </head>
 
-    <body class="bg-no1">
-        <header>
-            <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
-            <nav class="nav">
-                <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
-                <div class="nav-wrapper">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
-                        <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
-                        <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <body>
+        <button class="nav-trigger" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-list"></i></button>
+        <nav class="nav">
+            <button class="nav-close" onclick="document.querySelector('body').classList.toggle('nav-visible');"><i class="bi bi-x"></i></button>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://pixelfed.de/unlwly">Photos</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="https://www.youtube.com/@unlwly/videos">Videos</a></li>
+                    <li><a href="https://ko-fi.com/unlwly">Ko-fi</a></li>
+                    <li><a href="https://discord.gg/ATUuYXV7cn" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="center-h">
             <div class="center-v text-shadow">
                 <div class="l-cnt">
                     <div class="al">
                         <div class="avi"></div>
-                        <div class="logo"></div>
+                        <p class="logo no-pointer no-select">UNLWLY</p>
                     </div>
                     <div class="no-pointer quote-text"><script src="assets/js/quote.js"></script></div>
                     <div class="socials">
@@ -70,9 +68,9 @@
         </div>
 
         <div class="crn">
-            <footer>&copy; <span id="year"></span> unlwly. All Rights Reserved.</footer>
+            <footer>&copy; <span class="year"></span> unlwly. All Rights Reserved.</footer>
             <script>
-                document.getElementById("year").innerHTML = new Date().getFullYear();
+                document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
             </script>
         </div>
     </body>
