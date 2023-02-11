@@ -7,8 +7,7 @@ function startTime() {
         hour12: false,
     });
     var timeString = formatter.format(now);
-    var h = timeString.split(":")[0];
-    var m = timeString.split(":")[1];
+    var [h, m] = timeString.split(":");
     document.getElementsByClassName("time")[0].innerHTML = h + ":" + m;
     setTimeout(startTime, 1000);
 }

@@ -39,10 +39,6 @@ footer {
 	padding: 0.5em;
 }
 
-code {
-	font-family: 'Iosevka', monospace !important;
-}
-
 ::selection {background: var(--ac-st) !important;}
 
 .si {vertical-align: -.125em;-webkit-font-smoothing: antialiased;display: inline-block;}
@@ -117,13 +113,8 @@ a {
     text-decoration: underline;
 }
 
-pre {
-	margin: .5rem 0;
-	padding: .5rem;
-}
-
 .post p {
-	margin: .5rem 0;
+	margin: 0.5rem 0;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
@@ -139,14 +130,18 @@ pre {
 }
 
 code {
-	padding: .1rem;
+	font-family: 'Iosevka', monospace !important;
+
+	background-color: rgba(100, 100, 100, 0.1);
 }
 
 pre code {
+	background: none;
 	border: none;
 }
 
 pre {
+	margin: 0.5rem 0;
 	padding: 1rem;
 	overflow-x: auto;
 }
@@ -172,7 +167,7 @@ header a {
 }
 
 header li {
-	margin-bottom: .2rem;
+	margin-bottom: 0.2rem;
 	text-align: right;
 	margin-right: 2rem;
 }
@@ -225,7 +220,7 @@ strong, b {
 	align-items:center;
 	display:flex;
 	justify-content:space-between;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .posts li a, .posts li div, .projects li a {

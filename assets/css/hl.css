@@ -212,3 +212,8 @@
   color: #f8f8f2;
   background-color: #20201e;
 }
+
+.lineno {
+  user-select: none;
+  opacity: 0.45;
+}
