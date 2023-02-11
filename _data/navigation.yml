@@ -5,6 +5,8 @@ links:
   url: /about/
 - title: Photos <span class="bi bi-camera2"></span>
   url: https://pixelfed.de/unlwly
+- title: Ko-fi <span class="si si-kofi"></span>
+  url: https://ko-fi.com/unlwly
 - title: Search <span class="bi bi-search"></span>
   url: /search/
 - title: Rss <span class="bi bi-rss-fill"></span>
