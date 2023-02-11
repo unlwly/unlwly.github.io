@@ -1,20 +1,17 @@
 site: unlwly
-url: unlwly.github.io
+url: https://unlwly.github.io
 title: unlwly
 description: Product of lunacy.
 author:
   name: unlwly
   avatar: https://github.com/unlwly.png?size=256
   email: unlwly@proton.me
-  url: unlwly.github.io
+  url: https://unlwly.github.io
 permalink: pretty
 
 baseurl: ""
 
 markdown: kramdown
-highlighter: rouge
-highlight:
-  line_number: true
 kramdown:
   input: GFM
   syntax_highlighter: rouge

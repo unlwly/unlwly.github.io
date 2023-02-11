@@ -19,7 +19,7 @@
 }
 
 body {
-	font-family: 'Iosevka';
+	font-family: 'Iosevka', monospace;
 	-webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 	line-height:1.5;
@@ -37,6 +37,10 @@ footer {
 	background: rgba(250, 250, 250, 0.75);
 	backdrop-filter: blur(0.5em);
 	padding: 0.5em;
+}
+
+code {
+	font-family: 'Iosevka', monospace !important;
 }
 
 ::selection {background: var(--ac-st) !important;}
