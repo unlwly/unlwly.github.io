@@ -1,0 +1,62 @@
+site: unlwly
+url: unlwly.github.io
+title: unlwly
+description: Product of lunacy.
+author:
+  name: unlwly
+  avatar: https://github.com/unlwly.png?size=256
+  email: unlwly@proton.me
+  url: unlwly.github.io
+permalink: pretty
+
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+highlight:
+  line_number: true
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+  - .bundle
+  - .sass-cache
+  - .Gemfile
+  - _site
+  - .asset-cache
+  - LICENSE.md
+  - README.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

@@ -1,0 +1,11 @@
+links:
+- title: Blog <span class="bi bi-archive"></span>
+  url: /archive/
+- title: About <span class="bi bi-card-text"></span>
+  url: /about/
+- title: Photos <span class="bi bi-camera2"></span>
+  url: https://pixelfed.de/unlwly
+- title: Search <span class="bi bi-search"></span>
+  url: /search/
+- title: Rss <span class="bi bi-rss-fill"></span>
+  url: /atom.xml
