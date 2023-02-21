@@ -7,7 +7,6 @@ title: Search
 	#search-container {
 	    max-width: 100%;
 	}
-
 	input[type=text] {
 		font-size: normal;
 	    outline: none;
@@ -20,25 +19,21 @@ title: Search
 		border: none;
 	}
 	#results-container {
-		margin: .5rem 0;
+		margin: .5rem 0 5em 0;
 	}
 </style>
 
-<!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="Search...">
 <ol id="results-container"></ol>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src="/search.js" type="text/javascript"></script>
-
-<!-- Configuration -->
+<script src="/assets/js/search-script.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
+  json: '/assets/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
   noResultsText: 'No results found',
   limit: 10,

@@ -1,12 +1,13 @@
-# unlwly.github.io
+<div align="center">
+<h1><samp>UNLWLY:SITE</samp></h1>
 
-This is my personal website hosted on github-pages and made with jekyll  
-the theme is based on [Sidey](https://github.com/ronv/sidey) which is MIT licensed
+this is my personal website hosted on github-pages and made with jekyll
+</div>
 
-Other assets used:
+credits due:
 
 - [Iosevka](https://typeof.net/Iosevka/) ・ available under SIL OFL
 - [Bootstrap Icons](https://icons.getbootstrap.com/) ・ licensed under MIT
 - [Simple Icons](https://simpleicons.org) ・ licensed under CC0
 - [typed.js](https://github.com/mattboldt/typed.js/) ・ licensed under MIT
-- *Jekyll search script, etc.*
+- [Sidey](https://github.com/ronv/sidey) ・ licensed under MIT

@@ -3,7 +3,6 @@ layout: post
 title: Fuck you, world!
 description: First post on my blog
 summary: First post on my blog
-comments: true
 tags: [tag]
 ---
 
@@ -42,7 +41,8 @@ a code line:
 ### konata = patrick bateman (real)
 
 ![](https://media.tenor.com/images/3e2bf0427a1c7bf78f78bdf9c9faaabb/raw)
-![](https://i.kym-cdn.com/photos/images/facebook/001/995/865/43b.jpg)
+
+<img class="img-zoomable" alt="bateman" src="https://i.kym-cdn.com/photos/images/facebook/001/995/865/43b.jpg">
 
 ***impressive, very nice***
 
