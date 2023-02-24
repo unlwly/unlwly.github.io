@@ -3,20 +3,21 @@
 @import url("/assets/css/iosevka.css");
 
 :root {
-    --bg: rgb(255, 255, 255);
-    --bg-sta: rgba(255, 255, 255, 0.95);
-    --bg-stb: rgba(255, 255, 255, 0.6);
-    --ac: rgb(156, 34, 54);
-    --ac-d: rgba(116, 27, 42, 0.75);
-    --ac-st: rgba(156, 34, 54, 0.75);
+    --bg: rgb(247, 247, 247);
+    --bg-sta: rgba(247, 247, 247, 0.95);
+    --bg-stb: rgba(247, 247, 247, 0.6);
+    --bg-ac: rgb(235, 178, 186);
+    --ac: rgb(163, 91, 103);
+    --ac-d: rgba(112, 58, 67, 0.75);
+    --ac-st: rgba(153, 86, 97, 0.75);
     --ac-shadow: rgba(29, 1, 7, 0.65);
-    --tx-grad: linear-gradient(90deg,#f32e49 3%,#99091c 105%);
+    --tx-grad: linear-gradient(90deg,#f08694 3%,#914b54 105%);
     --tx: rgb(36, 36, 37);
     --tx-st: rgba(36, 36, 37, 0.63);
     --tx-muted: rgb(91, 91, 94);
 }
 
-html {width: 100%;height: 100%;}
+html {width: 100%;height: 100%;cursor: default;}
 body {
     font-family: 'Iosevka', monospace;
     -webkit-font-smoothing: antialiased;
@@ -26,7 +27,6 @@ body {
     color: var(--tx);
     background-color: var(--bg);
     margin: auto;
-    cursor: default;
 }
 
 footer {
@@ -38,6 +38,7 @@ footer {
     background: var(--bg-stb);
     backdrop-filter: blur(0.5em);
     padding: 0.5em;
+    pointer-events: none;
 }
 
 * {
@@ -93,6 +94,16 @@ hr {
 }
 .center-text {
     text-align: center;
+}
+
+.logo{
+    font-size: 80pt;
+    font-weight: 900;
+}
+
+.postttl{
+    font-size: 50pt;
+    font-weight: 900;
 }
 
 .si {vertical-align: -.125em;-webkit-font-smoothing: antialiased;display: inline-block;}
@@ -180,7 +191,7 @@ a {
 }
 
 .meta {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 code {
@@ -262,6 +273,7 @@ main {
     max-width: 50rem;
     margin: 4rem auto;
     padding: 1rem;
+    background-color: var(--bg-ac);
 }
 
 @media screen and (min-width: 783px) {
