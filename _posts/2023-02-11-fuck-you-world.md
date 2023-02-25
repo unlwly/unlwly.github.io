@@ -12,7 +12,7 @@ just trying out some stuff, *doing stuff*...
 
 > is there a point to this?
 
-**no**
+**not really**
 
 here's a js function to get the current time in Prague in 24h format:
 ```js
@@ -36,13 +36,17 @@ a code line:
 
 `I hate hatsune miku`
 
-[check this out](https://youtu.be/r34UfDH7uBw)
+### a youtube embed!
 
-### konata = patrick bateman (real)
+<iframe height="300px" src="https://www.youtube.com/embed/4TV_128Fz2g" title="Princess Chelsea - The Cigarette Duet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![](https://media.tenor.com/images/3e2bf0427a1c7bf78f78bdf9c9faaabb/raw)
+### testing images and zoomable classes
 
-<img class="img-zoomable" alt="bateman" src="https://i.kym-cdn.com/photos/images/facebook/001/995/865/43b.jpg">
+![konata's feet](https://media.tenor.com/images/3e2bf0427a1c7bf78f78bdf9c9faaabb/raw){:.zoomable}
+
+![patrick bateman](https://i.kym-cdn.com/photos/images/facebook/001/995/865/43b.jpg){:.zoomable}
+
+[kramdown](https://kramdown.gettalong.org/syntax.html) is pretty cool!
 
 ***impressive, very nice***
 
