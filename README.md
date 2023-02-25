@@ -6,8 +6,8 @@ this is my personal website hosted on github-pages and made with jekyll
 
 credits due:
 
-- [Iosevka](https://typeof.net/Iosevka/) ・ available under SIL OFL
-- [Bootstrap Icons](https://icons.getbootstrap.com/) ・ licensed under MIT
-- [Simple Icons](https://simpleicons.org) ・ licensed under CC0
-- [typed.js](https://github.com/mattboldt/typed.js/) ・ licensed under MIT
-- [Sidey](https://github.com/ronv/sidey) ・ licensed under MIT
+- [Iosevka](https://typeof.net/Iosevka/) &middot; available under SIL OFL
+- [Bootstrap Icons](https://icons.getbootstrap.com/) &middot; licensed under MIT
+- [Simple Icons](https://simpleicons.org) &middot; licensed under CC0
+- [typed.js](https://github.com/mattboldt/typed.js/) &middot; licensed under MIT
+- [zooming](https://github.com/kingdido999/zooming) &middot; licensed under MIT
