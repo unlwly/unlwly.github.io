@@ -11,7 +11,7 @@ title: Search
 		font-size: normal;
 	    outline: none;
 	    padding: 1rem;
-		background: rgb(236, 237, 238);
+		background: var(--bg-stb);
 	    width: 100%;
 		-webkit-appearance: none;
 		font-family: inherit;
