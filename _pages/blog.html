@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Archive
+title: Blog
 ---
 
 <section class="posts">
-    <h2 class="postttl">Blog Archive</h2>
+    <h2 class="postttl">Posts Index</h2>
     <ul>
     {% for post in site.posts %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time></li>
