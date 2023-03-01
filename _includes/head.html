@@ -1,13 +1,6 @@
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    {% if page.layout == "post" %}
-    {% seo title=false %}
-
-    <meta property="og:image" content="https://unlwly.github.io/assets/img/ico.png" />
-
-    {% else %}
 
     <meta name="author" content="unlwly" />
     <meta name="copyright" content="&copy; unlwly" />
@@ -16,39 +9,19 @@
 
     <meta property="og:site_name" content="unlwly.github.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="unlwly:site" />
-    <meta property="og:description" content="Product of lunacy." />
+    <meta property="og:title" content="unlwly : site" />
+    <meta property="og:description" content="Product of lunacy" />
     <meta property="og:url" content="https://unlwly.github.io" />
     <meta property="og:image" content="https://unlwly.github.io/assets/img/ico.png" />
 
-    {% endif %}
-
-    <title>
-        {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} |{% endif %}
-        {{ site.title | escape }}
-        {% if page.tag or page.title %}
-        :
-        {% if page.tag %}
-            {{ page.tag | escape }}
-        {% else %}
-            {{ page.title | escape }}
-        {% endif %}
-        {% endif %}
-        {% unless page.tag or page.title %}
-            site
-        {% endunless %}
-    </title>
+    <title>{{ site.title | escape }} : {{ page.title | escape }}</title>
   
     <link rel="shortcut icon" href="/assets/img/ico.png" />
     <link rel="icon" href="/assets/img/ico.png" />
     <link rel="apple-touch-icon" href="/assets/img/ico.png" />
     <link rel="mask-icon" href="/assets/img/ico.png" />
-    
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml" />
-    <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
 
     <meta content="#1E1E1E" data-react-helmet="true" name="theme-color" />
 
     <link rel="stylesheet" href="/assets/css/global.css" />
-    <link rel="stylesheet" href="/assets/css/hl.css" />
 </head>

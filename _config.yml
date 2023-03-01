@@ -1,20 +1,10 @@
 site: unlwly
 url: https://unlwly.github.io
 title: unlwly
-description: Product of lunacy.
-author:
-  name: unlwly
-  avatar: https://github.com/unlwly.png?size=256
-  email: unlwly@proton.me
-  url: https://unlwly.github.io
+description: Product of lunacy
 permalink: pretty
 
 baseurl: ""
-
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 exclude:
   - .jekyll-cache
@@ -26,18 +16,10 @@ exclude:
   - LICENSE.md
   - README.md
 
-plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap  
-
 collections:
   pages:
     output: true
     permalink: /:name/
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:slug
   
 defaults:
   -
@@ -51,9 +33,3 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
