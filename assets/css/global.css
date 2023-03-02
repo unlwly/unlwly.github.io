@@ -5,7 +5,7 @@
 :root {
     --bg: rgb(12, 12, 12);
     --bg-st: rgba(12, 12, 12, 0.6);
-    --ac: rgb(163, 91, 103);
+    --ac: rgb(78, 35, 53);
     --ac-d: rgba(112, 58, 67, 0.75);
     --ac-st: rgba(153, 86, 97, 0.75);
     --ac-shadow: rgba(29, 1, 7, 0.65);
@@ -25,9 +25,8 @@ body {
     line-height: 1.5;
     font-size: 1.1em;
     color: var(--tx);
-    background-color: var(--bg);
     margin: auto;
-    background: url("https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8") center/cover no-repeat;
+    background: url("https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"),var(--bg) center/cover no-repeat;
     background-size: cover !important;
 }
 
@@ -40,6 +39,7 @@ footer {
     backdrop-filter: blur(0.5em);
     padding: 0.5em;
     pointer-events: none;
+    color: var(--tx-st);
 }
 
 footer p, ul {
@@ -67,7 +67,7 @@ section {
     text-align: center;
 }
 
-.logo{
+.luw {
     font-size: 80pt;
     font-weight: bold;
     text-align: center;
@@ -84,38 +84,48 @@ section {
 
 .socials {
     list-style-type: none;
-    display: inline-flex;
     margin: auto;
     position: relative;
-    gap: 1.3rem;
-    height: 1.5em;
-    text-align: center;
-    margin-bottom: 1em;
 }
-.socials>li>a {
+.socials a {
     text-decoration: none;
 }
-.socials>li {
+.socials p {
     height: max-content;
-    display: inline-block;
+    margin: 0;
+    padding: 0.5em 1em;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
 }
-
-.icon-social {
+.label-social {
+    padding-right: 2em;
+}
+.social-link p span:first-child {
+    float: right;
+}
+.social-link:hover p {
+    background: var(--ac-st);
+}
+.social-link:hover p span:first-child {
+    mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg height='24' viewBox='100 100 960 960' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h279v60H180v600h600V597h60v279q0 24-18 42t-42 18H180Zm202-219-42-43 398-398H519v-60h321v321h-60V319L382 717Z' fill='currentColor' /%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+}
+.social-link {
     line-height: 1;
     position: relative;
     font-size: 16pt;
     color: var(--tx);
 
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
 }
-.icon-social:hover {
+.social-link:hover {
     color: var(--ac);
     text-shadow: 0 0 2px var(--ac-d);
 }
 
 .highlight-hover {
-    transition: filter .4s ease-in-out;
+    transition: filter .4s ease-out;
 }
 .highlight-hover:hover {
     filter: brightness(200%);
@@ -186,9 +196,10 @@ section {
 .quote {
     opacity: 0.7;
     text-align: center;
-    margin-bottom: 1em;
+    margin: 1em auto;
     pointer-events: none;
     user-select: none;
+    max-width: 12em;
 }
 
 .time {
