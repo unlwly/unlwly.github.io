@@ -1,7 +1,5 @@
-site: unlwly
 url: https://unlwly.github.io
-title: unlwly
-description: Product of lunacy
+
 permalink: pretty
 
 baseurl: ""
