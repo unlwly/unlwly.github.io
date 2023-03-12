@@ -1,6 +1,3 @@
 <footer>
-    <p>&copy; <span class="year"></span> unlwly</p>
+    <p>&copy; {{ 'now' | date: "%Y" }} unlwly</p>
 </footer>
-<script>
-    document.getElementsByClassName('year')[0].innerHTML = new Date().getFullYear();
-</script>

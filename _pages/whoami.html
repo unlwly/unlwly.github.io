@@ -1,0 +1,35 @@
+---
+layout: default
+title: about
+---
+
+<section>
+    <script src="/assets/js/typed.js"></script>
+    <a href="/"><img src="/assets/img/icons/chevron-left.svg" alt="back"></a>
+    <h2 class="bigTitle">Who am I?</h2>
+    <p>... a <span class="lunatic"></span></p>
+    <script>
+        var typed = new Typed(".lunatic", {
+            strings: ["designer", "developer", "lunatic"],
+            typeSpeed: 70,
+            backSpeed: 30,
+            loop: true
+        })
+    </script>
+
+    <div class="bio">
+        <p>
+            I'm a full-time student (IT) from Czech Republic. I'm particularly interested 
+            in graphic design, FOSS, hardware tinkering, linux, STEM etc.
+        </p>
+        <p>
+            Also I'm into music, audio tech, content creation, art, photographing and anime.
+        </p>
+        <p>
+            Additionally I'm familiar with CSS, JS, HTML, Jekyll, Bash, Python, Lua, C++ 
+        </p>
+    </div>
+
+    <p class="myTime">My current time is <span class="time"></span></p>
+    <script src="/assets/js/mytime.js"></script>
+</section>
