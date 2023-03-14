@@ -181,15 +181,6 @@ main {
     margin-bottom: 1em;
 }
 
-.quote {
-    opacity: 0.7;
-    text-align: center;
-    margin: 1em auto;
-    pointer-events: none;
-    user-select: none;
-    max-width: 12em;
-}
-
 p.myTime {
     margin: 2em;
     text-align: center;
